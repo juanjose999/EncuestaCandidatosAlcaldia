@@ -10,6 +10,9 @@ let btnHugo = document.getElementById('btnHugo');
 let contadorHugo = document.getElementById('contadorDeHugo');
 let btnAlvaro = document.getElementById('plancha');
 let contadorAlvaro = document.getElementById('contadorAlvaro');
+let btnVotoBlanco = document.getElementById('btnBlanco');
+let contadorBlanco = document.getElementById('contadorBlanco');
+let totalVotos = document.getElementById('contadorTotales');
 
 resultados.style.display = 'none';
 
@@ -65,4 +68,18 @@ function sumarAlvaro() {
     candidatos.style.display = 'none'
     let actualAlvaro = parseInt(contadorAlvaro.textContent);
     contadorAlvaro.textContent = actualAlvaro + 1;
+    total();
+}
+btnVotoBlanco.addEventListener('click', sumarBlanco);
+function sumarBlanco() {
+    resultados.style.display = 'block';
+    candidatos.style.display = 'none'
+    let actualBlanco = parseInt(contadorBlanco.textContent);
+    contadorBlanco.textContent = actualBlanco + 1;
+    total();
+}
+
+function total(){
+    let actualTotal = parseInt(totalVotos.textContent);
+    totalVotos.textContent = actualTotal + 1;
 }
