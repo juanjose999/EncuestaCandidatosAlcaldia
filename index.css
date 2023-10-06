@@ -200,6 +200,12 @@ div.containerResultados {
     grid-row: 2/2;
     width: 6em;
 }
+#contadorDanilo {
+    grid-column: 3/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #container-jairo {
     background-color: rgb(94, 220, 125);
     display: flex;
@@ -208,6 +214,12 @@ div.containerResultados {
     grid-template-columns: 1/2;
     grid-row: 3/3;
     width: 6em;
+}
+#contadorJairo {
+    grid-column: 3/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #container-cristian {
     background-color: rgb(220, 11, 11);
@@ -218,7 +230,12 @@ div.containerResultados {
     grid-row: 4/4;
     width: 6em;
 }
-
+#contadorCristian {
+    grid-column: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #contadorHugo{
     display: flex;
     background-color: rgb(173, 223, 65);
@@ -227,6 +244,12 @@ div.containerResultados {
     grid-template-columns: 1/2;
     grid-row: 5/5;
     width: 6em;
+}
+#contadorDeHugo {
+    grid-column: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .contadorDeAlvaro {
     background: rgb(255, 123, 0);
@@ -237,11 +260,29 @@ div.containerResultados {
     grid-row: 6/6;
     width: 6em;
 }
+#contadorAlvaro {
+    grid-column: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .contadorBlanco {
     grid-row: 7/7;
     width: 6em;
 }
+#contadorBlanco {
+    grid-column: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .votosTotales{
     grid-row: 8;
     width: 6em;
+}
+#contadorTotales {
+    grid-column: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
