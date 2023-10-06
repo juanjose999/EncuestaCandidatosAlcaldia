@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Alcalde Arboledas 2023</title>
+</head>
+
+<body>
+    <main>
+
+        <section class="containerCandidatos" id="containerCandidatos">
+            <section class="encuestaTitle">
+                <h1>Encuesta Independiente Alcalde<br> Arboledas Norte de Santander</h1>
+                <span>MARCAR MAS DE UNA OPCION ANULA EL VOTO</span>
+            </section>
+
+            <button id="danilo">
+                <article class="candidato" id="candidato1">
+                    <div class="container-info">
+                        <figure class="img">
+                            <img src="/assets/danilo.png" alt="">
+                        </figure>
+                        <div class="nombreCandidato">
+                            <span class="name">CARLOS DANILO <br>ESTEBAN GALVIS</span>
+                        </div>
+                    </div>
+                </article>
+            </button>
+
+            <button id="btnJairo">
+                <article class="candidato" id="candidato2">
+                    <div class="container-info">
+                        <figure class="img">
+                            <img src="/assets/ja.png" alt="">
+                        </figure>
+                        <div class="nombreCandidato">
+                            <span>JAIRO RODRIGUEZ <br>GARCIA</span>
+                        </div>
+                    </div>
+                </article>
+            </button>
+
+            <button id="btnCristian">
+                <article class="candidato" id="candidato3">
+                    <div class="container-info">
+                        <figure class="img">
+                            <img src="/assets/cr.png" alt="">
+                        </figure>
+                        <div class="nombreCandidato">
+                            <span>CHRISTIAN ANDRES <br> DIAZ CORREDOR</span>
+                        </div>
+                    </div>
+                </article>
+            </button>
+
+            <button id="btnHugo" class="hugoprimera">
+                    <article class="candidato" id="candidato4">
+                        <a href="resultados.html"></a>
+                        <div class="container-info">
+                            <figure class="img">
+                                <img src="/assets/hugo.png" alt="">
+                            </figure>
+                            <div class="nombreCandidato">
+                                <span>HUGO SOCORRO <br> GALVIS ROJAS</span>
+                            </div>
+                        </div>
+                        </a>
+                    </article>
+            </button>
+
+            <button id="plancha">
+                <article class="candidato" id="candidato5">
+                    <a href="/resultados.html"></a>
+                    <div class="container-info">
+                        <figure class="img">
+                            <img src="/assets/alvaro.png" alt="">
+                        </figure>
+                        <div class="nombreCandidato">
+                            <span>ALVARO REINALDO <br> CARRILLO BOHADA</span>
+                        </div>
+                    </div>
+                    </a>
+                </article>
+            </button>
+
+            <button id="btnBlanco">
+                <article class="candidato" id="candidato6">
+                    <div class="container-info">
+                        <figure class="img">
+                            <img src="" alt="">
+                        </figure>
+                        <div class="nombreCandidato">
+                            <span>Voto en Blanco</span>
+                        </div>
+                    </div>
+                </article>
+            </button>
+
+        </section>
+
+
+        <section class="resultadoPorCandidatos" id="resultados">
+
+            <div class="containerResultados">
+                <section class="titleResultados">
+                    <h1>Los resultados de la encuesta son:</h1>
+                </section>
+
+
+                <div class="contadorDeDanilo" id="container-danilo">
+                    <article class="candidato" id="candidato1">
+                        <div class="container-info" id="progresoCandidato1">
+                            <figure class="img">
+                                <img src="/assets/danilo.png" alt="">
+                            </figure>
+                            <div class="nombreCandidato">
+                                <span class="name">CARLOS DANILO <br> ESTEBAN GALVIS</span>
+                            </div>
+                        </div>
+                    </article>
+                    <span id="contadorDanilo"></span>
+                </div>
+
+                <div class="contadorDeJairo" id="container-jairo">
+                    <article class="candidato" id="candidato2">
+                        <div class="container-info" id="progresoCandidato2">
+                            <figure class="img">
+                                <img src="/assets/ja.png" alt="">
+                            </figure>
+                            <div class="nombreCandidato">
+                                <span>JAIRO RODRIGUEZ <br> GARCIA</span>
+                            </div>
+                        </div>
+                    </article>
+                    <span id="contadorJairo">0</span>
+                </div>
+
+
+                <div class="contadorDeChiristian" id="container-cristian">
+                    <article class="candidato" id="candidato3">
+                        <div class="container-info" id="progresoCandidato3">
+                            <figure class="img">
+                                <img src="/assets/cr.png" alt="">
+                            </figure>
+                            <div class="nombreCandidato">
+                                <span>CHRISTIAN ANDRES <br> DIAZ CORREDOR</span>
+                            </div>
+                        </div>
+                    </article>
+                    <span id="contadorCristian">0</span>
+                </div>
+
+                <div id="contadorHugo">
+                    <article class="candidato" id="candidato4">
+                        <div class="container-info" id="progresoCandidato4">
+                            <figure class="img">
+                                <img src="/assets/hugo.png" alt="">
+                            </figure>
+                            <div class="nombreCandidato">
+                                <span>HUGO SOCORRO <br> GALVIS ROJAS</span>
+                            </div>
+                        </div>
+                    </article>
+                    <span id="contadorDeHugo">0</span>
+                </div>
+
+                <div class="contadorDeAlvaro">
+                    <article class="candidato" id="candidato5">
+                        <div class="container-info" id="progresoCandidato5">
+                            <figure class="img">
+                                <img src="/assets/alvaro.png" alt="">
+                            </figure>
+                            <div class="nombreCandidato">
+                                <span>ALVARO REINALDO <br> CARRILLO BOHADA</span>
+                            </div>
+                        </div>
+                    </article>
+                    <span id="contadorAlvaro">0</span>
+                </div>
+
+                <div class="contadorBlanco">
+                    <article class="candidato" id="candidato6">
+                        <div class="container-info" id="progresoCandidato6">
+                            <div class="nombreCandidato">
+                                <span>Voto en Blanco</span>
+                            </div>
+                        </div>
+                    </article>
+                    <span id="contadorBlanco">0</span>
+                </div>
+
+                <div class="votosTotales">
+                    <div>
+                        <span>Total votos:</span>
+                    </div>
+                    <span id="contadorTotales">0</span>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+    <script src="/js/principal.js"></script>
+</body>
+
+</html>

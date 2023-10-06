@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: rgb(245, 244, 244);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.encuestaTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.4em;
+    font-size: 0.8em;
+    background: rgb(36, 35, 43);
+    border-radius: 0.3em;
+    color: white;
+    line-height: 1.7em;
+    width: 94%;
+    height: 80%;
+}
+.encuestaTitle{
+    grid-column: 1 / 3;
+}
+.containerCandidatos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.8fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 1.6em;
+    padding: 1em;
+}
+.enlace-candidato {
+    display: block; /* Para que el enlace ocupe todo el ancho del contenedor */
+    text-decoration: none; /* Para quitar el subrayado predeterminado del enlace */
+    color: inherit; /* Para heredar el color del texto del artículo */
+}
+.containerCandidatos .candidato {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    border: solid rgb(39, 40, 41) 0.3em;
+    padding: 1.6em;
+    margin-top: -0.2em;
+}
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.container-info figure img {
+    width: 6em;
+
+}
+#danilo {
+    grid-column: 1/2;
+    grid-row: 2/2;
+}
+#btnJairo {
+    grid-column: 2/3;
+    grid-row: 2/2;
+}
+#btnCristian {
+    grid-column: 1/2;
+    grid-row: 3/3;
+}
+.hugoprimera {
+    grid-column: 2/2;
+    grid-row: 3/3;
+}
+#plancha {
+    grid-column: 1/1;
+    grid-row: 4/4;
+}
+#btnBlanco {
+    grid-column: 2/2;
+    grid-row: 4/4;
+}
+.candidato span {
+    font-size: 1em;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    display: flex;
+    padding: 0.2em;
+}
+
+.containerCandidatos #candidato6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11.6em;
+    width: 9.8em;
+    font-weight: 700;
+}
+.containerCandidatos #candidato6 .container-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerCandidatos #candidato6 span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    margin-top: -1.2em;
+}
+
+
+#candidato1:hover {
+    transition: transform 0.3s ease, 0.3s ease;
+    transform: scale(1.1);
+    background: rgb(185, 184, 184);
+}
+
+#candidato2:hover {
+    transition: transform 0.3s ease, 0.3s ease;
+    transform: scale(1.1);
+    background: rgb(185, 184, 184);
+}
+
+#candidato3:hover {
+    transition: transform 0.3s ease, 0.3s ease;
+    transform: scale(1.1);
+    background: rgb(185, 184, 184);
+}
+
+#candidato4:hover {
+    transition: transform 0.3s ease, 0.3s ease;
+    transform: scale(1.1);
+    background: rgb(185, 184, 184);
+}
+
+#candidato5:hover {
+    transition: transform 0.3s ease, 0.3s ease;
+    transform: scale(1.1);
+    background: rgb(185, 184, 184);
+}
+
+#candidato6:hover {
+    transition: transform 0.3s ease, 0.3s ease;
+    transform: scale(1.1);
+    background: rgb(185, 184, 184);
+}
+
+/* aqui comienza resultado */
+
+div.containerResultados {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1em;
+}
+.container-info span {
+    font-size: 0.6em;
+}
+.titleResultados {
+    grid-column: 1/4;
+    background: black;
+    color: white;
+}
+.resultadoPorCandidato {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr;
+}
+.containerResultados figure img {
+    width: 4em;
+}
+
+#container-danilo {
+    background-color: rgb(18, 179, 40);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1/2;
+    grid-row: 2/2;
+    width: 6em;
+}
+#container-jairo {
+    background-color: rgb(94, 220, 125);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1/2;
+    grid-row: 3/3;
+    width: 6em;
+}
+#container-cristian {
+    background-color: rgb(220, 11, 11);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1/2;
+    grid-row: 4/4;
+    width: 6em;
+}
+
+#contadorHugo{
+    display: flex;
+    background-color: rgb(173, 223, 65);
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1/2;
+    grid-row: 5/5;
+    width: 6em;
+}
+.contadorDeAlvaro {
+    background: rgb(255, 123, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1/2;
+    grid-row: 6/6;
+    width: 6em;
+}
+.contadorBlanco {
+    grid-row: 7/7;
+    width: 6em;
+}
+.votosTotales{
+    grid-row: 8;
+    width: 6em;
+}
