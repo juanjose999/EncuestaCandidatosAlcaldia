@@ -14,17 +14,7 @@ let btnVotoBlanco = document.getElementById('btnBlanco');
 let contadorBlanco = document.getElementById('contadorBlanco');
 let totalVotos = document.getElementById('contadorTotales');
 
-resultados.style.display = 'none';
 
-// Agrega un evento táctil al elemento en JavaScript
-document.getElementById('candidato1').addEventListener('touchstart', function() {
-    this.classList.add('active');
-});
-
-// Elimina la clase 'active' cuando se levanta el dedo
-document.getElementById('candidato1').addEventListener('touchend', function() {
-    this.classList.remove('active');
-});
 document.addEventListener("DOMContentLoaded", function() {
     contadorDanilo.textContent = '0';
 });
