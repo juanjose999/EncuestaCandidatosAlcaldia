@@ -1,5 +1,4 @@
-let contadorDanilo = document.getElementById('contadorDanilo')
-let btnSumaDanilo = document.getElementById('danilo');
+
 let resultados = document.getElementById('resultados');
 let candidatos = document.getElementById('containerCandidatos');
 let btnJairo = document.getElementById('btnJairo');
@@ -16,18 +15,10 @@ let totalVotos = document.getElementById('contadorTotales');
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    contadorDanilo.textContent = '0';
+    contadorDanilo.textContent = '2033';
 });
 
-btnSumaDanilo.addEventListener('click', sumaDanilo);
 
-function sumaDanilo() {
-    resultados.style.display = 'block';
-    candidatos.style.display = 'none'
-   let valorActual = parseInt(contadorDanilo.textContent);
-   contadorDanilo.textContent = valorActual + 1;
-   console.log('Contador Danilo:', contadorDanilo.textContent)
-}
 
 btnJairo.addEventListener('click', sumarJairo);
 function sumarJairo(){
