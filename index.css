@@ -8,7 +8,7 @@ body {
     width: 100%;
     height: 100vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: rgb(216, 216, 216);
+    background: rgb(36, 28, 56);
 }
 
 main {
@@ -34,9 +34,11 @@ main {
     line-height: 1.7em;
     width: 94%;
     height: 80%;
+    border-radius: 0.6em;
 }
 .encuestaTitle{
     grid-column: 1 / 3;
+    
 }
 h1 {
     padding: 1.2em;
@@ -192,6 +194,7 @@ div.containerResultados {
     grid-column: 1/4;
     background: black;
     color: white;
+    border-radius: 0.6em;
 }
 .resultadoPorCandidato {
     display: flex;
@@ -210,8 +213,9 @@ div.containerResultados {
     align-items: center;
     grid-template-columns: 1/2;
     grid-row: 2/2;
-    width: 83%;
+    width: 86%;
     display: flex;
+    border-radius: 0.6em;
 }
 
 .nombreCandidato span{
@@ -232,6 +236,7 @@ div.containerResultados {
     grid-row: 3/3;
     width: 1%;
     display: flex;
+    border-radius: 0.6em;
 }
 #posicion2 {
     grid-column: 3/3;
@@ -248,6 +253,7 @@ div.containerResultados {
     grid-row: 4/4;
     width: 54%;
     display: flex;
+    border-radius: 0.6em;
 }
 #contadorCristian {
     grid-column: 3;
@@ -264,6 +270,7 @@ div.containerResultados {
     grid-row: 5/5;
     width: 16%;
     display: flex;
+    border-radius: 0.6em;
 }
 #contadorDeHugo {
     grid-column: 3;
@@ -280,6 +287,7 @@ div.containerResultados {
     grid-row: 6/6;
     width: 100%;
     display: flex;
+    border-radius: 0.6em;
 }
 #contadorAlvaro {
     grid-column: 3;
@@ -295,6 +303,7 @@ div.containerResultados {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 0.6em;
 }
 .votosTotales{
     grid-row: 8;
@@ -327,7 +336,6 @@ span#contadorJairo {
     font-size: 2em;
 }
 span#contadorCristian {
-    border: solid red 1px;
     font-weight: 700;
     color: white;
     font-size: 2em;
@@ -347,12 +355,14 @@ span#contadorDeHugo {
     display: flex;
     width: 100%;
     flex-direction: row;
+    border-radius: 0.6em;
 }
 #progresoCandidato6.container-info span{
     background: black;
     display: flex;
     width: 100%;
     justify-content: flex-end;
+    border-radius: 0.6em;
 }
 span#contadorBlanco {
     color: white;
@@ -367,13 +377,38 @@ span#contadorBlanco {
     justify-content: center;
     align-items: center;
     font-size: 1em;
+    border-radius: 0.6em;
 }
 .votosTotales span {
     font-size: 1em;
+    border-radius: 0.6em;
 }
 .votosTotales .div{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    border-radius: 0.6em;
+}
+
+.animacion {
+    font-size: 24px;
+    font-weight: bold;
+    animation: cambioNombre 2s ease-in-out forwards;
+}
+
+@keyframes cambioNombre {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        content: 'Juan'; /* Cambia aquí al nombre deseado */
+    }
 }

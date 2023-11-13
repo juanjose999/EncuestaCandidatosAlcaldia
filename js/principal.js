@@ -15,7 +15,7 @@ let totalVotos = document.getElementById('contadorTotales');
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    contadorDanilo.textContent = '2033';
+    contadorDanilo.textContent = '1899';
 });
 
 
